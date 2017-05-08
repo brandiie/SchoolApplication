@@ -5,7 +5,13 @@
              x:Class="HighFiveoulus.Detail"
              Title="High Fiveoulus"
              Icon="menu.png"
-             BackgroundColor="Cyan">
-    
-    
+             BackgroundColor="Yellow"
+             >
+    <Image Source="highfive.png" 
+           TranslationY="-150"
+           TranslationX="-20"
+           Aspect="AspectFit"/>
+    <Label Text="Username:"></Label>
+    <Entry></Entry>
+
 </ContentPage>

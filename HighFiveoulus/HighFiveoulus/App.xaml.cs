@@ -23,7 +23,8 @@ namespace HighFiveoulus
         {
             InitializeComponent();
 
-            MainPage = new HighFiveoulus.DashBoard();
+            MainPage = new NavigationPage(new HighFiveoulus.MainPage());
+
             
         }
 

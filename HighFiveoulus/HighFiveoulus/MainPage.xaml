@@ -3,30 +3,34 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:HighFiveoulus"
              x:Class="HighFiveoulus.MainPage"
-             Title="High Fiveoulus School">
-
+             Title="High Fiveoulus School"  
+             
+             >
+    <Grid>
+        <Image Source="background.png" Aspect="AspectFit"></Image>
+    </Grid>
+    
     <StackLayout
         Padding="50"
-         VerticalOptions="Center">
+         VerticalOptions="Center" 
+        
+        >
+        
+        <Image Source="highfive.png" 
+           TranslationY="-50"
+           TranslationX="-20"
+           Aspect="AspectFit"/>
 
-        <Grid Padding="0,0,0,10">
-
-            <Label
-              Text="LOGIN"
-              FontSize="45"
-              TextColor="Black"
-              HorizontalOptions="Center"></Label>
-            
-        </Grid>
+        
 
         <Entry
             x:Name="UserName"
-            Placeholder="UserName: ">
+            Placeholder="UserName ">
         </Entry>
 
         <Entry
             x:Name="Password"
-             Placeholder="Password: ">
+             Placeholder="Password ">
         </Entry>
 
         <Button
