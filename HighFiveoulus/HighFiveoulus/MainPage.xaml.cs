@@ -15,9 +15,7 @@ namespace HighFiveoulus
         {
             InitializeComponent();
 
-            //this.BackgroundColor = Color.Yellow;
-            //this.BackgroundImage = "Images.SchoolBackground.jpg";
-            BackgroundImage = "SchoolBackground.jpg";
+            
         }
         
 
@@ -32,7 +30,8 @@ namespace HighFiveoulus
             if (Username == "ruth" && PassWord == "ruth")
 
                     {
-                        DisplayAlert("MESSAGE", "WELCOME", "OK");
+                Navigation.PushModalAsync(new DashBoard());
+                DisplayAlert("MESSAGE", "WELCOME", "OK");
                         DisplayResult.Text = "";
                     
                     }

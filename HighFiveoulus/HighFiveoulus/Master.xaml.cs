@@ -16,22 +16,30 @@ namespace HighFiveoulus
         {
             InitializeComponent();
 
-            ButtonAbout.Clicked += async (sender, e) =>
+            var menu = new List<MenuList>
             {
-                await App.NavigateMasterDetail(new AboutUs());
-            };
+                new MenuList { Menu ="About", Options="About" },
+                new MenuList { Menu ="Mission", Options="Mission"},
+                new MenuList { Menu ="Vision", Options="Vision"},
+                new MenuList { Menu ="Sign Out", Options="SignOut" }
 
-            ButtonMission.Clicked += async (sender, e) =>
-            {
-                await App.NavigateMasterDetail(new Mission());
-            };
+           };
 
-            ButtonVision.Clicked += async (sender, e) =>
-            {
-                await App.NavigateMasterDetail(new Vision());
-            };
+            MenuListView.ItemsSource = menu;
+
+        }
+
+        private async void MenuListView_ItemTapped(object sender, ItemTappedEventArgs e)
+        {
+
+            var MenuClicked = e.Item as MenuList;
+
+            await DisplayAlert("Message", "Menu:" + MenuClicked, "Ok");
 
 
         }
+
+
     }
-}
+    }
+

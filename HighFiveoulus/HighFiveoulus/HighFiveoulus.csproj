@@ -53,6 +53,7 @@
     <Compile Include="Master.xaml.cs">
       <DependentUpon>Master.xaml</DependentUpon>
     </Compile>
+    <Compile Include="MenuList.cs" />
     <Compile Include="Mission.xaml.cs">
       <DependentUpon>Mission.xaml</DependentUpon>
     </Compile>

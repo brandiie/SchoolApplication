@@ -4,23 +4,39 @@
              x:Class="HighFiveoulus.Master"
              Title="Master"
              BackgroundColor="Gray">
-    <StackLayout 
+    <StackLayout Orientation="Vertical">
 
-        Padding="20">
-        
-        <Button
-            x:Name="ButtonAbout"
-            Text="About Us"></Button>
+        <Image Source="highfive.png"></Image>
 
-        <Button
-            x:Name="ButtonMission"
-            Text="Mission"></Button>
 
-        <Button
-            x:Name="ButtonVision"
-            Text="Vision"></Button>
+        <Label
+        Text="High-Fiveoulus"
+        FontSize="Medium"
+        HorizontalOptions="Center"
+        ></Label>
+
+        <ListView x:Name="MenuListView"
+                  HasUnevenRows="True"
+                  ItemTapped="MenuListView_ItemTapped"
+                  >
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout Orientation="Vertical"
+                                     Padding="10">
+                            <Label Text="{Binding Menu}"
+                                   FontSize="Medium"></Label>
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
+
+
 
 
     </StackLayout>
+
 
 </ContentPage>
