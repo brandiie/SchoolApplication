@@ -6,10 +6,8 @@
              Title="High Fiveoulus School"  
              
              >
-    <Grid>
-        <Image Source="background.png" Aspect="AspectFit"></Image>
-    </Grid>
     
+
     <StackLayout
         Padding="50"
          VerticalOptions="Center" 
@@ -18,7 +16,7 @@
         
         <Image Source="highfive.png" 
            TranslationY="-50"
-           TranslationX="-20"
+           TranslationX="-10"
            Aspect="AspectFit"/>
 
         
@@ -43,6 +41,7 @@
 
         <Button
             Text="SignUp"
+            
             Clicked="SignUpClicked"
             BackgroundColor="Blue"
             TextColor="White"
@@ -55,6 +54,6 @@
         </Label>
 
     </StackLayout>
-
+   
 
 </ContentPage>

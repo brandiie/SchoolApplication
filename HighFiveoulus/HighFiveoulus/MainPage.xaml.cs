@@ -8,17 +8,19 @@ using Xamarin.Forms;
 namespace HighFiveoulus
 {
     public partial class MainPage : ContentPage 
-    {
 
+    {
+        List<string> objEmpCollections = new List<string>();
         public MainPage()
         {
             InitializeComponent();
 
-            
+            //this.BackgroundColor = Color.Yellow;
+            //this.BackgroundImage = "Images.SchoolBackground.jpg";
+            BackgroundImage = "SchoolBackground.jpg";
         }
         
 
-        
 
         private void LogInonClicked(object sender, EventArgs e) {
 
@@ -32,6 +34,7 @@ namespace HighFiveoulus
                     {
                         DisplayAlert("MESSAGE", "WELCOME", "OK");
                         DisplayResult.Text = "";
+                    
                     }
 
             else

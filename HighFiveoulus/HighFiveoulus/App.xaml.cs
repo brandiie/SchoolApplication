@@ -23,7 +23,12 @@ namespace HighFiveoulus
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new HighFiveoulus.MainPage());
+            MainPage = new NavigationPage(new HighFiveoulus.MainPage())
+            {
+                BarBackgroundColor = Color.FromHex("#0000ff"),
+                BarTextColor = Color.White,
+                
+            };
 
             
         }
