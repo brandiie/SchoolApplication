@@ -4,8 +4,8 @@
              x:Class="HighFiveoulus.Master"
              Title="Master"
              BackgroundColor="Gray">
-
     <StackLayout 
+
         Padding="20">
         
         <Button

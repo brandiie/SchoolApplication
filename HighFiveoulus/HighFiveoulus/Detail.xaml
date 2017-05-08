@@ -5,7 +5,7 @@
              x:Class="HighFiveoulus.Detail"
              Title="High Fiveoulus"
              Icon="menu.png"
-             BackgroundColor="AliceBlue">
+             BackgroundColor="Cyan">
     
     
 </ContentPage>
