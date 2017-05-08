@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:HighFiveoulus"
+             x:Class="HighFiveoulus.MainPage">
+
+    <StackLayout BackgroundColor="AliceBlue"
+                 Padding="60"
+                 VerticalOptions="Center" >
+
+
+        <Label
+          Text="LOGIN"
+          FontSize="Large"
+          FontAttributes="Italic"
+          ></Label>
+
+
+        <Label
+          Text="Enter Username:"
+          FontSize="Medium"></Label>
+
+        <Entry
+            x:Name="UserName"></Entry>
+
+        <Label
+          Text="Enter Password:"
+          FontSize="Medium"></Label>
+
+        <Entry
+            x:Name="Password"></Entry>
+
+        <Button
+            Text="Login"
+            Clicked="LogInonClicked"></Button>
+
+
+        <Label 
+            x:Name="DisplayResult"
+            TextColor="Red"></Label>
+
+    </StackLayout>
+
+
+</ContentPage>

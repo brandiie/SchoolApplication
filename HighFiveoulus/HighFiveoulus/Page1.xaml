@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HighFiveoulus.Page1"
+             Title="Create an Account"
+             BackgroundColor="Gray">
+    
+    <ScrollView >
+
+    <StackLayout
+        Padding="10">
+
+        <Entry
+            Placeholder="FullName"
+            BackgroundColor="White"></Entry>
+
+        <Entry
+            Placeholder="NickName"
+            BackgroundColor="White"></Entry>
+
+        <Label
+            Text="Birthdate"
+            FontSize="Small"
+            TextColor="Black"
+            BackgroundColor="White"></Label>
+        
+        <DatePicker
+            Date="1993-05-06"
+            BackgroundColor="White"
+            TextColor="Black"></DatePicker>
+
+        <Label
+            Text="Gender"
+            FontSize="Small"
+            TextColor="Black"
+            BackgroundColor="White"></Label>
+
+        <Picker
+                x:Name="Gender"
+                BackgroundColor="White"></Picker>
+
+        <Entry
+            Placeholder="Nationality"
+            BackgroundColor="White"></Entry>
+
+        <Entry
+            Placeholder="Grade"
+            BackgroundColor="White"></Entry>
+
+        <Entry
+            Placeholder="Home Room Teacher"
+            BackgroundColor="White"></Entry>
+
+        <Entry
+            Placeholder="Home Address"
+            BackgroundColor="White"></Entry>
+        
+        <Entry
+            Placeholder="City"
+            BackgroundColor="White"></Entry>
+
+        <Entry
+            Placeholder="Home Phone"
+            BackgroundColor="White"></Entry>
+
+        <Entry
+            Placeholder="CellPhone"
+            BackgroundColor="White"></Entry>
+
+        <Entry
+            Placeholder="Fax"
+            BackgroundColor="White"></Entry>
+
+        <Entry
+            Placeholder="Home Address"
+            BackgroundColor="White"></Entry>
+
+        <Label
+            Text="Email"
+            FontSize="Small"
+            TextColor="Black"
+            BackgroundColor="White"></Label>
+
+        <Entry
+            Placeholder="example@yahoo.com"
+            BackgroundColor="White"></Entry>
+
+        <Entry
+            Placeholder="State"
+            BackgroundColor="White"></Entry>
+        
+        <Entry
+            Placeholder="ZipCode"
+            BackgroundColor="White"></Entry>
+
+        <Entry
+            Placeholder="Country"
+            BackgroundColor="White"></Entry>
+
+        <Button
+            Text="Submit"
+            Clicked="SubmitonClicked"
+            BackgroundColor="White"></Button>
+
+    </StackLayout>
+
+    </ScrollView>
+
+</ContentPage>

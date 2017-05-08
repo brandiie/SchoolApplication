@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:HighFiveoulus"
+             x:Class="HighFiveoulus.MainPage"
+             Title="High Fiveoulus School">
+
+    <StackLayout
+        Padding="50"
+         VerticalOptions="Center">
+
+        <Grid Padding="0,0,0,10">
+
+            <Label
+              Text="LOGIN"
+              FontSize="45"
+              TextColor="Black"
+              HorizontalOptions="Center"></Label>
+            
+        </Grid>
+
+        <Entry
+            x:Name="UserName"
+            Placeholder="UserName: ">
+        </Entry>
+
+        <Entry
+            x:Name="Password"
+             Placeholder="Password: ">
+        </Entry>
+
+        <Button
+            Text="Login"
+            Clicked="LogInonClicked"
+            BackgroundColor="Blue"
+            TextColor="White"
+            FontAttributes="Bold">
+        </Button>
+
+        <Button
+            Text="SignUp"
+            Clicked="SignUpClicked"
+            BackgroundColor="Blue"
+            TextColor="White"
+            FontAttributes="Bold">
+        </Button>
+
+        <Label 
+            x:Name="DisplayResult"
+            TextColor="Red">
+        </Label>
+
+    </StackLayout>
+
+
+</ContentPage>
