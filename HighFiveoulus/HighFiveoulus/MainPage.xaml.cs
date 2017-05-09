@@ -15,49 +15,6 @@ namespace HighFiveoulus
         {
             InitializeComponent();
 
-            
         }
-        
-
-
-        private void LogInonClicked(object sender, EventArgs e) {
-
-          
-            string Username = UserName.Text;
-            string PassWord = Password.Text;
-          
-
-            if (Username == "ruth" && PassWord == "ruth")
-
-                    {
-                Navigation.PushModalAsync(new DashBoard());
-                DisplayAlert("MESSAGE", "WELCOME", "OK");
-                        DisplayResult.Text = "";
-                    
-                    }
-
-            else
-                    {
-
-                        DisplayResult.Text = "Username/Password incorrect ";
-               
-                    }
-
-
-        }
-
-        private async void SignUpClicked(object sender, EventArgs e)
-        {
-            await Navigation.PushAsync(new Page1());
-            UserName.Text = "";
-            Password.Text = "";
-
-        }
-
-
-
-
-
-
     }
 }

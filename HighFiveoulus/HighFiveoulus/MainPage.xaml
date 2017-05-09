@@ -34,18 +34,20 @@
         <Button
             Text="Login"
             Clicked="LogInonClicked"
-            BackgroundColor="Blue"
+            BackgroundColor="#3F51B5"
             TextColor="White"
-            FontAttributes="Bold">
+            FontAttributes="Bold"
+             BorderRadius="20,20,20,20">
         </Button>
 
         <Button
             Text="SignUp"
             
             Clicked="SignUpClicked"
-            BackgroundColor="Blue"
+            BackgroundColor="#3F51B5"
             TextColor="White"
-            FontAttributes="Bold">
+            FontAttributes="Bold"
+            BorderRadius="20,20,20,20">
         </Button>
 
         <Label 

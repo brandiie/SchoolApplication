@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 
+
 namespace HighFiveoulus
 {
     public partial class App : Application
@@ -23,12 +24,7 @@ namespace HighFiveoulus
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new HighFiveoulus.MainPage())
-            {
-                BarBackgroundColor = Color.FromHex("#0000ff"),
-                BarTextColor = Color.White,
-                
-            };
+            MainPage = new HighFiveoulus.LoginUsername();
 
             
         }

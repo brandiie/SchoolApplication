@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="HighFiveoulus.Master"
              Title="Master"
-             BackgroundColor="Gray">
+             BackgroundColor="White">
     <StackLayout Orientation="Vertical">
 
         <Image Source="highfive.png"></Image>

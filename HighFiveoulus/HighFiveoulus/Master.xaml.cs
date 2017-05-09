@@ -18,10 +18,11 @@ namespace HighFiveoulus
 
             var menu = new List<MenuList>
             {
-                new MenuList { Menu ="About", Options="About" },
-                new MenuList { Menu ="Mission", Options="Mission"},
-                new MenuList { Menu ="Vision", Options="Vision"},
-                new MenuList { Menu ="Sign Out", Options="SignOut" }
+                new MenuList { Menu ="My Profile",},
+                new MenuList { Menu ="My Subject",},
+                new MenuList { Menu ="Events",},
+                new MenuList { Menu ="Settings"},
+                new MenuList { Menu ="Sign Out"}
 
            };
 
@@ -33,18 +34,21 @@ namespace HighFiveoulus
         {
 
             var MenuClicked = e.Item as MenuList;
-            if (MenuClicked.Options == "About")
+            if (MenuClicked.Menu == "My Profile")
             {
-                await Navigation.PushModalAsync(new AboutUs());
+                await Navigation.PushModalAsync(new MyProfile());
             }
-            else if (MenuClicked.Options == "Mission") {
-                await Navigation.PushModalAsync(new Mission());
+            else if (MenuClicked.Menu == "Events") {
+                await Navigation.PushModalAsync(new MySubject());
             }
-            else if (MenuClicked.Options == "Vision")
+            else if (MenuClicked.Menu == "Events") {
+                await Navigation.PushModalAsync(new Events());
+            }
+            else if (MenuClicked.Menu == "Settings")
             {
-                await Navigation.PushModalAsync(new Vision());
+                await Navigation.PushModalAsync(new Settings());
             }
-            else if (MenuClicked.Options == "SignOut")
+            else if (MenuClicked.Menu == "Sign Out")
             {
                 await Navigation.PushModalAsync(new MainPage());
             }

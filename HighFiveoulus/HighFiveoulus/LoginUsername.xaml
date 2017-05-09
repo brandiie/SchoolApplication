@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HighFiveoulus.LoginUsername"
+            BackgroundColor="#81D4FA">
+    
+    <StackLayout
+         Padding="20">
+        <Grid BackgroundColor="Transparent" HorizontalOptions="Center" HeightRequest="50"></Grid>
+        <Image Source="highfive.jpg" HeightRequest="100" WidthRequest="100"></Image>
+        <Grid BackgroundColor="Transparent" HorizontalOptions="Center" HeightRequest="40"></Grid>
+        <Entry 
+            x:Name="Username"
+            Placeholder="Username"
+            WidthRequest="300"></Entry>
+
+        <Frame BackgroundColor="#90A4AE" Padding="6" WidthRequest="100" HeightRequest="40" HorizontalOptions="Center" HasShadow="False">
+            <Grid BackgroundColor="#81D4FA" >
+        <Button
+            
+            BorderColor="Red"
+            BackgroundColor="Transparent"
+            Text="Next"
+            TextColor="White"    
+            FontAttributes="Bold"
+            
+            HorizontalOptions="Start"
+            Clicked="NextUsername_Clicked"
+            ></Button>
+            </Grid>
+        </Frame>
+
+
+        <Label
+                x:Name="Invalid"></Label>
+
+
+
+
+    </StackLayout>
+</ContentPage>

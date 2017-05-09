@@ -10,9 +10,9 @@ using Xamarin.Forms.Xaml;
 namespace HighFiveoulus
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class Mission : ContentPage
+    public partial class Settings : ContentPage
     {
-        public Mission()
+        public Settings()
         {
             InitializeComponent();
         }

@@ -10,23 +10,11 @@ using Xamarin.Forms.Xaml;
 namespace HighFiveoulus
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class AboutUs : MasterDetailPage
+    public partial class MySubject : ContentPage
     {
-        public AboutUs()
+        public MySubject()
         {
             InitializeComponent();
-
-            this.Master = new Master();
-            this.Detail = new NavigationPage(new Detail());
-            App.Menu = this;
-
-
         }
-
-        
-
-
-
-
     }
 }

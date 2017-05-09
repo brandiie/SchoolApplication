@@ -1,10 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="HighFiveoulus.AboutUs"
-             BackgroundColor="Aqua"
->
+             x:Class="HighFiveoulus.MyProfile"
+             BackgroundColor="Aqua">
 
     <Label
-        Text="About Us"></Label>
+        Text="My Profile"></Label>
 </MasterDetailPage>
