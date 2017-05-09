@@ -33,8 +33,21 @@ namespace HighFiveoulus
         {
 
             var MenuClicked = e.Item as MenuList;
-
-            await DisplayAlert("Message", "Menu:" + MenuClicked, "Ok");
+            if (MenuClicked.Options == "About")
+            {
+                await Navigation.PushModalAsync(new AboutUs());
+            }
+            else if (MenuClicked.Options == "Mission") {
+                await Navigation.PushModalAsync(new Mission());
+            }
+            else if (MenuClicked.Options == "Vision")
+            {
+                await Navigation.PushModalAsync(new Vision());
+            }
+            else if (MenuClicked.Options == "SignOut")
+            {
+                await Navigation.PushModalAsync(new MainPage());
+            }
 
 
         }
